@@ -1,0 +1,21 @@
+.reveal .ar-content {
+    direction: rtl;
+    list-style-type: arabic-indic;
+    text-align: center;
+}
+
+.reveal ol {
+    list-style-type: inherit;
+    list-style-position: inside;
+}
+
+.reveal video {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container{
+    font-family: Amiri, Arial, Helvetica, sans-serif;
+}
