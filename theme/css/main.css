@@ -16,6 +16,10 @@
     margin-right: auto;
 }
 
-.container{
+.reveal strong {
+    color: #4DF250;
+}
+
+.container {
     font-family: Amiri, Arial, Helvetica, sans-serif;
 }
