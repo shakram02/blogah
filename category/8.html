@@ -39,15 +39,16 @@
     // - https://revealjs.com/config/
     Reveal.initialize({
         slideNumber: slide => {
-            var slideNum = Reveal.getIndices(slide).h;
+            let slideNum = Reveal.getIndices(slide).h;
 
 
             if (slideNum === undefined) return '123';
-            var arSlideNum = (slideNum + 1).toString().toArabicIndicDigits();
-            var totalSlideNum = Reveal.getTotalSlides().toString().toArabicIndicDigits();
-            var slideMark = `${arSlideNum}/${totalSlideNum}`;
+            let arSlideNum = (slideNum + 1).toString().toArabicIndicDigits();
+            let totalSlideNum = Reveal.getTotalSlides().toString().toArabicIndicDigits();
+            let slideMark = `${arSlideNum}/${totalSlideNum}`;
             return [slideMark];
-        }
+        },
+        width: '100%'
     });
 </script>
     

@@ -1,5 +1,5 @@
 String.prototype.toArabicIndicDigits = function () {
-    var id = ['۰', '۱', '۲', '۳', '۴', '۵', '٦', '۷', '۸', '۹'];
+    let id = ['۰', '۱', '۲', '۳', '۴', '۵', '٦', '۷', '۸', '۹'];
     return this.replace(/[0-9]/g, function (w) {
         return id[+w]
     });
@@ -11,7 +11,7 @@ String.prototype.toArabicIndicDigits = function () {
 //     // - https://revealjs.com/config/
 //     Reveal.initialize({
 //         slideNumber: slide => {
-//             var slideNum = Reveal.getIndices(slide).h;
+//             let slideNum = Reveal.getIndices(slide).h;
 //             return [slideNum.toString().toArabicIndicDigits()];
 //         }
 //     });
