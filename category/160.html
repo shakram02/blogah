@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amiri:400,700&amp;subset=arabic">
+    <title>Accessible Hadith - 160 category</title>
+
+<link rel="stylesheet" href="./theme/css/reset.css">
+<link rel="stylesheet" href="./theme/css/reveal.css">
+<link rel="stylesheet" href="./theme/css/simple.css" id="theme">
+
+<link rel="stylesheet" href="./theme/css/main.css">
+</head>
+
+<body>
+
+<div class="reveal">
+    <div class="slides ar-content">
+        <section>
+            <ol>
+<li value="160">أن الرسول صللس جاء إلى السقاية فاستسقى، فقال العباس: يا فضل، اذهب إلى أمك فأت رسول الله صللس بشراب من عندها، فقال: اسقني، قال: يا رسول الله، إنهم يجعلون أيديهم فيه، قال صللس: (اسقني)، فشرب منه، ثم أتى زمزم وهم يسقون ويعملون فيها، فقال: (اعملوا فإنكم على عمل صالح)، ثم قال: (لولا أن تغلبوا لنزلت حتى أضع الحبل على هذه ـ يعني عاتقه ـ) <strong>وأشار إلى عاتقه</strong>.</li>
+</ol>
+<p>
+<video loop autoplay muted data-src="v_160.webm" type="video/webm"></video>
+</p>
+        </section>
+    </div>
+</div>
+
+<script src="./theme/js/main.js"></script>
+<script src="./theme/js/reveal.js"></script>
+<script>
+    // More info about initialization & config:
+    // - https://revealjs.com/initialization/
+    // - https://revealjs.com/config/
+    Reveal.initialize({
+        slideNumber: slide => {
+            let slideNum = Reveal.getIndices(slide).h;
+
+
+            if (slideNum === undefined) return '123';
+            let arSlideNum = (slideNum + 1).toString().toArabicIndicDigits();
+            let totalSlideNum = Reveal.getTotalSlides().toString().toArabicIndicDigits();
+            let slideMark = `${arSlideNum}/${totalSlideNum}`;
+            return [slideMark];
+        },
+        width: '100%',
+        height: '100%',
+        autoPlayMedia: true
+    });
+</script>
+    
+</body>
+
+</html>

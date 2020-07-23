@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amiri:400,700&amp;subset=arabic">
+    <title>Accessible Hadith - 26 category</title>
+
+<link rel="stylesheet" href="./theme/css/reset.css">
+<link rel="stylesheet" href="./theme/css/reveal.css">
+<link rel="stylesheet" href="./theme/css/simple.css" id="theme">
+
+<link rel="stylesheet" href="./theme/css/main.css">
+</head>
+
+<body>
+
+<div class="reveal">
+    <div class="slides ar-content">
+        <section>
+            <ol>
+<li value="26">قال الامام أحمد حدثنا اسماعيل بن عمير حدثنا يونس بن أبى اسحاق الهمزانى حدثنا أبراهيم بن محمد بن سعد حدثنى والدى محمد عن ابية سعد هو أبن أبى وقاص رضى الله عنة قال: مررت بعثمان بن عفان رضللع  في المسجد فسلمت عليه، فملأ عينيه مني ثم لم يرد السلام، فأتيت عمر بن الخطاب، فقلتُ: يا أمير المؤمنين، هل حدث في الإسلام شيء ـ مرتين ـ؟ قال: لا، وما ذاك؟ قلتُ: لا، إلا أني مررت بعثمان آنفًا في المسجد، فسلمت عليه، فملأ عينيه مني فلم يرد علي السلام، قال: فأرسل عمر إلى عثمان فدعاه، فقال: ما منعك أن لا تكون رددت على أخيك السلام، قال ما فعلت، قال سعد: قلت بلى، حتى حلف وحلفت، قال: ثم إن عثمان ذكر فقال: بلى وأستغفر الله وأتوب إليه، إنك مررت بي آنفًا وأنا أحدث نفسي بكلمة سمعتها من رسول الله صللس، لا والله ما ذكرتُها قط إلا تغشى بصري وقلبي غشاوة، قال سعد: فأنا أنبئك بها، إن رسول الله صللس ذكر لنا أول دعوة، ثم جاء أعرابي فشغله حتى قام رسول الله صللس فأتبعته، فلما أشفقت أن يسبقني إلى منزله <strong>ضربت بقدمي الأرض</strong>، <strong>فالتفت إلي رسول الله</strong> صللس <strong>فقال: (من هذا أبو إسحاق؟)،</strong> قال: نعم يا رسول الله، قال صللس : (فَمَه)، قلت: لا والله، إلا أنك ذكرت لنا أول دعوة، ثم جاء الأعرابي فشغلك، قال: (نَعَم دعوة ذي النون إذ هو في بطن الحوت: قفتحاية لا إِلَهَ إِلا أَنْتَ سُبْحَانَكَ إِنِّي كُنْتُ مِنَ الظَّالِمِينَ ققفلاية، فإنه لم يدع بها مسلم ربه في شيء قط إلا استجاب له). [الأنبياء: ٨٧]</li>
+</ol>
+        </section>
+    </div>
+</div>
+
+<script src="./theme/js/main.js"></script>
+<script src="./theme/js/reveal.js"></script>
+<script>
+    // More info about initialization & config:
+    // - https://revealjs.com/initialization/
+    // - https://revealjs.com/config/
+    Reveal.initialize({
+        slideNumber: slide => {
+            let slideNum = Reveal.getIndices(slide).h;
+
+
+            if (slideNum === undefined) return '123';
+            let arSlideNum = (slideNum + 1).toString().toArabicIndicDigits();
+            let totalSlideNum = Reveal.getTotalSlides().toString().toArabicIndicDigits();
+            let slideMark = `${arSlideNum}/${totalSlideNum}`;
+            return [slideMark];
+        },
+        width: '100%',
+        height: '100%',
+        autoPlayMedia: true
+    });
+</script>
+    
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amiri:400,700&amp;subset=arabic">
+    <title>Accessible Hadith - 156 category</title>
+
+<link rel="stylesheet" href="./theme/css/reset.css">
+<link rel="stylesheet" href="./theme/css/reveal.css">
+<link rel="stylesheet" href="./theme/css/simple.css" id="theme">
+
+<link rel="stylesheet" href="./theme/css/main.css">
+</head>
+
+<body>
+
+<div class="reveal">
+    <div class="slides ar-content">
+        <section>
+            <ol>
+<li value="156">ثنا عبيد الله بن عكراش عن أبيه عكراش بن ذؤيب قال: بعثني مرة في صدقات أموالهم إلى رسول الله صللس، فقدمت المدينة فإذا هو جالس بين المهاجرين والأنصار، وقدمت عليه بابل كأنها عروق الأرطي، قال: (من الرجل؟)، قلتُ: عكراش بن ذؤيب، قال: (ارفع في النسب)، فانتسب له إلى مرة بن عبيد، وقال: هذه صدقة مرة بن عبيد، <strong>فتبسم رسول الله</strong> صللس وقال: (هذه إبل قومي هذه صدقات)، ثم أمر بها أن توسم بميسم إبل الصدقة وتضم إليها، ثم أخذ بيدي فانطلقنا إلى منزل أم سلمة، فقال: (هل من طعام؟)، فأتينا بحفنة كالقصعة كثيرة الثريد والوذر، فجعل يأكل منها، فأقبلت أخبط بيدي في جوانبها، <strong>فقبض رسول الله</strong> صللس<strong>بيده اليسرى على يدي</strong> اليمنى، فقال: (يا عكراش، كل من موضع واحد فإنه طعام واحد)، ثم أتينا بطبق فيه تمر أو رطب ـ شك عبيد الله رطبًا كان أو تمرًا ـ فجعلت آكل من بين يدي، وجالت يد رسول الله صللس في الطبق وقال: (يا عكراش، كل من حيث شئت فإنه غير لون واحد)، ثم أتينا بماء <strong>فغسل رسول الله</strong>صللس <strong>يده ومسح ببلل كفيه وجهه وذراعيه ورأسه ثلاثًا،</strong> ثم قال: (يا عكراش هذا الوضوء مما غيرت النار).</li>
+</ol>
+<p>
+<video loop autoplay muted data-src="v_156.webm" type="video/webm"></video>
+</p>
+        </section>
+    </div>
+</div>
+
+<script src="./theme/js/main.js"></script>
+<script src="./theme/js/reveal.js"></script>
+<script>
+    // More info about initialization & config:
+    // - https://revealjs.com/initialization/
+    // - https://revealjs.com/config/
+    Reveal.initialize({
+        slideNumber: slide => {
+            let slideNum = Reveal.getIndices(slide).h;
+
+
+            if (slideNum === undefined) return '123';
+            let arSlideNum = (slideNum + 1).toString().toArabicIndicDigits();
+            let totalSlideNum = Reveal.getTotalSlides().toString().toArabicIndicDigits();
+            let slideMark = `${arSlideNum}/${totalSlideNum}`;
+            return [slideMark];
+        },
+        width: '100%',
+        height: '100%',
+        autoPlayMedia: true
+    });
+</script>
+    
+</body>
+
+</html>

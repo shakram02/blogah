@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amiri:400,700&amp;subset=arabic">
+    <title>Accessible Hadith - 204 category</title>
+
+<link rel="stylesheet" href="./theme/css/reset.css">
+<link rel="stylesheet" href="./theme/css/reveal.css">
+<link rel="stylesheet" href="./theme/css/simple.css" id="theme">
+
+<link rel="stylesheet" href="./theme/css/main.css">
+</head>
+
+<body>
+
+<div class="reveal">
+    <div class="slides ar-content">
+        <section>
+            <ol>
+<li value="204">عن عائشة رضي الله عنها أن أسماء بنت أبي بكر دخلت على النبي صللس وعليها ثياب رقاق، فأعرض عنها صللس وقال: (يا أسماء، إن المرأة إذا بلغت المحيض لم يصلح أن يرى منها إلا هذا)، و<strong>أشار إلى وجهه وكفيه</strong>.</li>
+</ol>
+<p>
+<video loop autoplay muted data-src="v_204.webm" type="video/webm"></video>
+</p>
+        </section>
+    </div>
+</div>
+
+<script src="./theme/js/main.js"></script>
+<script src="./theme/js/reveal.js"></script>
+<script>
+    // More info about initialization & config:
+    // - https://revealjs.com/initialization/
+    // - https://revealjs.com/config/
+    Reveal.initialize({
+        slideNumber: slide => {
+            let slideNum = Reveal.getIndices(slide).h;
+
+
+            if (slideNum === undefined) return '123';
+            let arSlideNum = (slideNum + 1).toString().toArabicIndicDigits();
+            let totalSlideNum = Reveal.getTotalSlides().toString().toArabicIndicDigits();
+            let slideMark = `${arSlideNum}/${totalSlideNum}`;
+            return [slideMark];
+        },
+        width: '100%',
+        height: '100%',
+        autoPlayMedia: true
+    });
+</script>
+    
+</body>
+
+</html>

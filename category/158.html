@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amiri:400,700&amp;subset=arabic">
+    <title>Accessible Hadith - 158 category</title>
+
+<link rel="stylesheet" href="./theme/css/reset.css">
+<link rel="stylesheet" href="./theme/css/reveal.css">
+<link rel="stylesheet" href="./theme/css/simple.css" id="theme">
+
+<link rel="stylesheet" href="./theme/css/main.css">
+</head>
+
+<body>
+
+<div class="reveal">
+    <div class="slides ar-content">
+        <section>
+            <ol>
+<li value="158">قال رسول الله صللس: (من أنظر معسرًا أو وضع عنه أظله الله عز وجل في ظله يوم لا ظل إلا ظله)، وقد أخرجه مسلم في صحيحه من وجه أخر من حديث عباد بن الوليد بن عبادة بن الصامت قال: خرجت أنا وأبي نطلب العلم في هذا الحي من الأنصار قبل أن يهلكوا، فكان أول من لقينا أبا اليسـر صاحب رسول الله صللس ومعه غلام، له معه ضمامة من صحف، وعلى أبي اليسر بردة ومعافري، وعلى غلامه بردة ومعافري، فقال له أبي: يا عم رسول الله، إني أرى في وجهك سفعة من غضب، قال: أجل، كان لي على فلان بن فلان الرامي مال، فأتيت أهله فسلمت فقلتُ: أثم هو؟ قالوا: لا، فخرج على ابن له جعفر، فقلتُ: أين أبوك؟ فقال: سمع صوتك فدخل أريكة أمي، فقلتُ: اخرج إلي، فقد علمت أين أنت، فخرج فقلتُ: ما حملك على أن اختبأت مني؟ قال: أنا والله أحدثك ثم لا أكذبك، خشيت والله أن أحدثك فأكذبك أو أعدك فأخلفك، وكنت صاحب رسول الله صللس وكنت والله معسرًا، قال: قلتُ: آلله؟ قال: الله، قلتُ: آلله؟ قال: الله، ثم قال فأتى بصحيفته فمحاها بيده، ثم قال: فإن وجدت قضاء فاقضني وإلا فأنت في حل، <strong>فاشهد أبصـر عيناي هاتان</strong> ـ ووضع أصبعيه على عينيه ـ وسمع أذناي هاتان ووعاه قلبي ـ وأشار إلى نياط قلبه ـ رسول صللس وهو يقول: (من أنظر معسرًا ووضع عنه أظله الله في ظله).</li>
+</ol>
+        </section>
+    </div>
+</div>
+
+<script src="./theme/js/main.js"></script>
+<script src="./theme/js/reveal.js"></script>
+<script>
+    // More info about initialization & config:
+    // - https://revealjs.com/initialization/
+    // - https://revealjs.com/config/
+    Reveal.initialize({
+        slideNumber: slide => {
+            let slideNum = Reveal.getIndices(slide).h;
+
+
+            if (slideNum === undefined) return '123';
+            let arSlideNum = (slideNum + 1).toString().toArabicIndicDigits();
+            let totalSlideNum = Reveal.getTotalSlides().toString().toArabicIndicDigits();
+            let slideMark = `${arSlideNum}/${totalSlideNum}`;
+            return [slideMark];
+        },
+        width: '100%',
+        height: '100%',
+        autoPlayMedia: true
+    });
+</script>
+    
+</body>
+
+</html>

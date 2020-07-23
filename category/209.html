@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amiri:400,700&amp;subset=arabic">
+    <title>Accessible Hadith - 209 category</title>
+
+<link rel="stylesheet" href="./theme/css/reset.css">
+<link rel="stylesheet" href="./theme/css/reveal.css">
+<link rel="stylesheet" href="./theme/css/simple.css" id="theme">
+
+<link rel="stylesheet" href="./theme/css/main.css">
+</head>
+
+<body>
+
+<div class="reveal">
+    <div class="slides ar-content">
+        <section>
+            <ol>
+<li value="209">عن عائشة رضي الله عنها كانت تقول: إن من نعم الله أن رسول الله صللس توفي في بيتي وفي يومي وبين سحري ونحري، وأن الله جمع بين ريقي وريقه عند موته؛ دخل عليَّ عبد الرحمن وبيده السواك وأنا مسندة رسول الله صللس<strong>فرأيته ينظر عليه</strong>، وعرفت أنه يحب السواك، فقلت: آخذه لك؟ <strong>فأشار برأسه أن نعم،</strong> فتناولته فاشتد عليه، وقلت: ألينه لك؟ <strong>فأشار برأسه أن نعم،</strong> فلينته وبين يديه ركوة أو علبة يشك عمر فيها ماء، <strong>فجعل يدخل يديه في الماء فيمسح بهما وجهه</strong> يقول: (لا إله إلا الله، إن للموت سكرات)، <strong>ثم نصب يده</strong> فجعل يقول: (في الرفيق الأعلى)، حتى قبض <strong>ومالت يده.</strong></li>
+</ol>
+<p>
+<video loop autoplay muted data-src="v_209.webm" type="video/webm"></video>
+</p>
+        </section>
+    </div>
+</div>
+
+<script src="./theme/js/main.js"></script>
+<script src="./theme/js/reveal.js"></script>
+<script>
+    // More info about initialization & config:
+    // - https://revealjs.com/initialization/
+    // - https://revealjs.com/config/
+    Reveal.initialize({
+        slideNumber: slide => {
+            let slideNum = Reveal.getIndices(slide).h;
+
+
+            if (slideNum === undefined) return '123';
+            let arSlideNum = (slideNum + 1).toString().toArabicIndicDigits();
+            let totalSlideNum = Reveal.getTotalSlides().toString().toArabicIndicDigits();
+            let slideMark = `${arSlideNum}/${totalSlideNum}`;
+            return [slideMark];
+        },
+        width: '100%',
+        height: '100%',
+        autoPlayMedia: true
+    });
+</script>
+    
+</body>
+
+</html>
